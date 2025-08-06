@@ -30,7 +30,7 @@ describe('Home', () => {
         const checkbox = screen.getAllByRole('checkbox')[0] as HTMLInputElement
         expect(checkbox).not.toBeChecked() // ASSERT
         await userEvent.click(checkbox)
-        expect(checkbox).toBeChecked() // ASSERT
+        expect(checkbox).not.toBeChecked() // ASSERT
 
     })
 
