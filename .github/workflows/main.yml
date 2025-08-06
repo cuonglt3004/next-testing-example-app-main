@@ -4,7 +4,7 @@
     on:
       push:
         branches:
-          - main # or your desired branch
+          - '*' # Triggers on all branches
 
     jobs:
       test:
