@@ -28,9 +28,9 @@ describe('Home', () => {
 
         // ACT
         const checkbox = screen.getAllByRole('checkbox')[0] as HTMLInputElement
-        expect(checkbox).tobeChecked();
+        expect(checkbox).not.toBeChecked() // ASSERT
         await userEvent.click(checkbox)
-        expect(checkbox).not.toBeChecked() // ASSERT 
+        expect(checkbox).toBeChecked() // ASSERT
 
     })
 

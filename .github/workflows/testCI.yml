@@ -1,0 +1,17 @@
+    # .github/workflows/main.yml (example for GitHub Actions)
+    name: Run Tests on Push
+
+    on:
+      push:
+        branches:
+          - main # or your desired branch
+
+    jobs:
+      test:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v3
+          - name: Install dependencies
+            run: npm install
+          - name: Run tests
+            run: npm test

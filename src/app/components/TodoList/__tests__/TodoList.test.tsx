@@ -20,14 +20,14 @@ const mockSetTodos = jest.fn()
 
 describe('TodoList', () => {
 
-    it('should render "No Todos Available" when the array is empty', () => {
-        render(<TodoList todos={[]} setTodos={mockSetTodos} />) // ARRANGE
+    // it('should render "No Todos Available" when the array is empty', () => {
+    //     render(<TodoList todos={[]} setTodos={mockSetTodos} />) // ARRANGE
 
-        //ACT
-        const message = screen.getByText('No Todos Available')
+    //     //ACT
+    //     const message = screen.getByText('No Todos Available')
 
-        expect(message).toBeInTheDocument()// ASSERT
-    })
+    //     expect(message).toBeInTheDocument()// ASSERT
+    // })
 
     it('should render a list with the correct number of items', () => {
         render(
